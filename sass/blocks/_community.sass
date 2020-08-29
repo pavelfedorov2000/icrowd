@@ -1,0 +1,56 @@
+.community
+    min-height: 615px
+    padding: 75px 0 60px 0
+    background: url('../img/bg/community_bg.jpg') center (center/cover) no-repeat
+    &__title
+        color: #9ec02d
+        font-size: 39px
+        font-weight: 600
+        text-align: center
+        margin: 0 auto
+    &__descr
+        max-width: 912px
+        color: #949494
+        font-size: 19px
+        font-weight: 400
+        text-align: center
+        margin: 0 auto
+        margin-top: 42px
+    &__messages
+        +flex
+        flex-wrap: wrap
+        width: 100%
+        margin-top: 98px
+    &__message
+        position: relative
+        +center 
+        width: 397px
+        height: 166px
+        background-image: url('../img/bg/message_bg.png')
+        &:first-child
+            margin-top: 0
+        &-inner
+            max-width: 319px
+        &-title
+            color: #9ec02d
+            font-size: 21px
+            font-weight: 600
+            text-align: center
+        &-text
+            color: #848484
+            font-size: 13px
+            font-weight: 400
+            text-align: center
+            margin-top: 20px
+    &__person
+        position: absolute
+        bottom: -70px
+        left: 43px
+        display: flex
+        align-items: center
+        color: #494949
+        font-family: $second-font
+        font-size: 15px
+        font-weight: 400
+        img
+            margin-right: 10px

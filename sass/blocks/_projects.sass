@@ -1,0 +1,123 @@
+.projects
+    min-height: 775px
+    padding-top: 80px
+    &__container
+        max-width: 980px
+        margin: 0 auto
+    &__header
+        +flex
+        flex-wrap: wrap
+        width: 100%
+        margin-bottom: 65px
+        &-left
+            width: 672px
+    &__title
+        color: #515151
+        font-size: 29px
+    &__descr
+        color: #8f8f8f
+        font-size: 17px
+        font-weight: 400
+        margin-top: 25px
+    &__btn
+        +btn
+        width: 181px
+        height: 50px
+        border: 1px solid #515151
+        background-color: #ffffff
+        opacity: 0.42
+        color: #515151
+        font-size: 15px
+        transition: .3s all
+        &:hover
+            background-color: $green
+            opacity: 1
+            color: #ffffff
+            border: 0
+    &__wrapper
+        +flex 
+        flex-wrap: wrap
+        width: 100%
+    &__photo
+        position: relative
+        &-label
+            position: absolute
+            bottom: 20px
+            right: 15px
+            width: 139px
+            height: 35px
+            border-radius: 5px
+            background-color: #26a6d1
+            +center
+            color: #ffffff
+            font-size: 17px
+            font-weight: 400
+    &__img
+        display: block
+        margin: 0 auto
+        width: 300px
+        max-width: 100%
+        height: auto
+    &__item
+        min-height: 520px
+        width: 300px
+        &-content
+            border: 1px solid rgba(0, 0, 0, 0.14)
+            background-color: #f7f7f7
+            opacity: 0.71
+            padding: 30px 25px 25px 25px
+        &-title
+            color: #484848
+            font-size: 17px
+            font-weight: 700
+        &-descr
+            opacity: 0.71
+            color: #484848
+            font-size: 13px
+            font-weight: 400
+            margin-top: 17px
+    &__progress
+        margin-top: 20px
+        progress[value]
+            -webkit-appearance: none
+            appearance: none
+            width: 100%
+            height: 14px
+            &::-webkit-progress-bar
+                background-color: #e3e3e3
+                border-radius: 20px
+            &::-webkit-progress-value
+                background-color: $green
+                border-top-left-radius: 20px
+                border-bottom-left-radius: 20px
+        &-descr
+            +flex
+            color: #8d8d8d
+            font-size: 13px
+
+            margin-top: 20px
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            height: 1px
+            background-color: #e3e3e3
+            margin-top: 20px
+    &__details
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        opacity: 0.85
+        color: #484848
+        font-size: 15px
+        margin-top: 25px
+        text-align: right
+        &:hover
+            +link
+        i
+            font-size: 24px
+            color: $green
+            margin-left: 10px
+        
+                
+                

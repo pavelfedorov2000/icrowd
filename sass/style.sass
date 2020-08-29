@@ -1,0 +1,37 @@
+@import 'base/variables'
+@import 'base/mixins'
+*, *:before, *:after
+    box-sizing: inherit
+    
+body 
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+h1, h2, h3, h4, h5, h6, p 
+    margin: 0
+ul, li
+    list-style-type: none
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+img
+    +mw
+.container
+    max-width: 1010px
+    padding: 0 15px
+    margin: 0 auto
+        
+@import 'blocks/header'
+@import 'blocks/main'
+@import 'blocks/work'
+@import 'blocks/find'
+@import 'blocks/projects'
+@import 'blocks/community'
+@import 'blocks/footer'
+@import 'blocks/pageup'
+
+@import 'base/media'

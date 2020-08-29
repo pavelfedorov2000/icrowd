@@ -1,0 +1,35 @@
+.find
+    display: flex
+    flex-wrap: wrap
+    &__item
+        width: 50%
+        height: 305px
+        background-color: #f5f9eb
+        +center
+        &:first-child
+            background: url('../img/bg/find_item-1_bg.png') center (center/cover) no-repeat
+    &__inner
+        display: flex
+        align-items: center
+        width: 70%
+    &__content
+        margin-left: 45px
+        &:last-child
+            margin-left: 72px
+    &__title
+        color: #515151
+        font-family: Montserrat
+        font-size: 23px
+        font-weight: 400
+    &__descr
+        color: #515151
+        font-size: 17px
+        font-weight: 400
+        margin-top: 34px
+    &__btn
+        width: 187px
+        height: 51px
+        +btn
+        margin-top: 30px
+        &_blue
+            background-color: #26a6d1
